@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+form {
+    text-align: center;
+    border: 2px solid black;
+    padding: 20px;
+    background-color: #2f2f2f;
+}
+input[type="text"]{
+    width: 220px;
+    height: 40px;
+    font-size: 18px;
+}
+input[type="button"]{
+    width: 50px;
+    height: 40px;
+    font-size: 18px;
+}
