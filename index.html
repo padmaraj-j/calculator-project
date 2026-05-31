@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title> data table</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Calculator</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
-    <form name="calc">
-        <input type="text" name="display" readonly>
-        <br><br>
-        <input type="button" value="7">
-        <input type="button" value="8">
-        <input type="button" value="9">
-        <input type="button" value="/">
-        <br><br>
-        <input type="button" value="4">
-        <input type="button" value="5">
-        <input type="button" value="6">
-        <input type="button" value="*">
-        <br><br>
-        <input type="button" value="1">
-        <input type="button" value="2">
-        <input type="button" value="3">
-        <input type="button" value="-">
-        <br><br>
-        <input type="button" value="0">
-        <input type="button" value=".">
-        <input type="button" value="=">
-        <input type="button" value="+">
-        <br><br>
-        <input type="button" value="c">
-    </form>
+    <div class="calculator">
+        <form name="calc">
+            <input type="text" name="display" class="display" readonly>
+            
+            <div class="keypad">
+                <input type="button" value="7">
+                <input type="button" value="8">
+                <input type="button" value="9">
+                <input type="button" value="/" class="operator">
+                
+                <input type="button" value="4">
+                <input type="button" value="5">
+                <input type="button" value="6">
+                <input type="button" value="*" class="operator">
+                
+                <input type="button" value="1">
+                <input type="button" value="2">
+                <input type="button" value="3">
+                <input type="button" value="-" class="operator">
+                
+                <input type="button" value="c" class="clear">
+                <input type="button" value="0">
+                <input type="button" value=".">
+                <input type="button" value="+" class="operator">
+                
+                <input type="button" value="=" class="equals">
+            </div>
+        </form>
+    </div>
     <script src="cal.js"></script>
 </body>
 </html>

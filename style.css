@@ -1,23 +1,99 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    background-color: #f0f2f5;
+    font-family: 'Poppins', sans-serif;
 }
+
+.calculator {
+    background-color: #22252d;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    box-sizing: border-box;
+}
+
 form {
-    text-align: center;
-    border: 2px solid black;
-    padding: 20px;
-    background-color: #2f2f2f;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
 }
-input[type="text"]{
-    width: 220px;
-    height: 40px;
-    font-size: 18px;
+
+.display {
+    width: 100%;
+    height: 80px;
+    border: none;
+    background-color: #292d36;
+    color: #ffffff;
+    text-align: right;
+    font-size: 2.5rem;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
 }
-input[type="button"]{
-    width: 50px;
-    height: 40px;
-    font-size: 18px;
+
+.display:focus {
+    outline: none;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+input[type="button"] {
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 12px;
+    background-color: #292d36;
+    color: #ffffff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.2);
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type="button"]:active {
+    transform: translateY(4px);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+input[type="button"]:hover {
+    background-color: #3b404d;
+}
+
+.operator {
+    color: #26e7a6 !important;
+    background-color: #2b353b !important;
+}
+
+.clear {
+    color: #ff5e5e !important;
+}
+
+.equals {
+    grid-column: span 4;
+    background-color: #26e7a6 !important;
+    color: #22252d !important;
+    font-weight: 500;
+}
+
+.equals:hover {
+    background-color: #1fc78f !important;
 }
